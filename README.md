@@ -1,15 +1,17 @@
 ## About
 
-Find your favourite beers with this App.
+Web page with a grid of articles.
 
-Demo available at: <a target="_blank" href="https://ridez-beer-finder.netlify.com">https://ridez-beer-finder.netlify.com</a>
+Demo available at: <a target="_blank" href="https://articles-grid.netlify.app/">https://articles-grid.netlify.app/</a>
 
 #### App features:
 <ul>
-  <li>Display list of beers</li>
-  <li>Load more beers (infinite scroll)</li>
-  <li>Display details view in modal</li>
-  <li>Display similar beers in Details view</li>
+  <li>Display grid of articles.</li>
+  <li>Show notifications on button click.</li>
+  <li>Animation on article hover.</li>
+  <li>Fade in articles animation.</li>
+  <li>Display tooltip on button hover.</li>
+  <li>Check if element is in Viewport using Intersection Observer API.</li>
 </ul>
 
 ## Quickstart
