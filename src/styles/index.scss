@@ -1,0 +1,118 @@
+@import '/src/styles/variables';
+@import './fonts';
+@import '~antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: SFProText, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+}
+
+.container {
+  position: relative;
+  margin: 80px auto 0 auto;
+  padding: 0 15px 80px 15px;
+}
+
+.ant-btn-primary {
+  display: flex;
+  align-items: center;
+  background: $white;
+  border: 0;
+  border-radius: 28px;
+  padding: 28px 33px;
+  span {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    color: $black;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $white;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: $black;
+  margin-bottom: 8px;
+}
+
+.ant-tooltip {
+  &-arrow-content {
+    width: 10px;
+    height: 10px;
+  }
+  &-inner {
+    border-radius: 5px;
+    background-color: rgba($black, 0.93);
+    box-shadow: 0px 6px 16px #33333340;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: $white;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+  }
+}
+
+.section-title {
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+}
+
+.inView {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+
+@media (min-width: 476px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1340px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+    width: 1680px;
+    max-width: 100%;
+  }
+}
