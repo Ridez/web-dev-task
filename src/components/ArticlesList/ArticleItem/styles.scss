@@ -1,0 +1,131 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+
+.post-preview {
+  opacity: 0;
+  transform: translateY(50px);
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.image {
+  @include aspect-ratio(344, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: $grey;
+  margin-bottom: 20px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  &__content {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  &__hover {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    &--top {
+      top: 8px;
+      right: 12px;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    &::after {
+      opacity: 0.5;
+    }
+    .image__content {
+      transform: scale(1.05);
+    }
+    .image__hover {
+      opacity: 1;
+    }
+  }
+}
+
+.btns-list {
+  display: flex;
+  list-style-type: none;
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $white;
+    border-radius: 100%;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    cursor: pointer;
+    margin-right: 8px;
+    &::after {
+      content: '';
+      background-color: $white;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      &::after {
+        opacity: 0.33;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    .thumb-down {
+      width: 19px;
+      height: 19px;
+    }
+    .save {
+      width: 17px;
+      height: 17px;
+    }
+    .details {
+      width: 16px;
+      height: 14px;
+    }
+  }
+}
+
+.source-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  p {
+    font-size: 13px;
+    color: $black-light;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
