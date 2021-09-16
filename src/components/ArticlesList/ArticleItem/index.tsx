@@ -27,12 +27,7 @@ export const ArticleItem: React.FC<Props> = ({ article }) => {
         <article className={isVisible ? 'post-preview inView' : 'post-preview'} ref={ref}>
           <div>
             <figure className='image'>
-              <img
-                className='image__content'
-                src={article.image}
-                alt={article.imageAlt}
-                loading='lazy'
-              />
+              <img className='image__content' src={article.image} alt={article.imageAlt} />
               <div className='image__hover image__hover--top'>
                 <ul className='btns-list'>
                   <Tooltip title='Vote down'>
