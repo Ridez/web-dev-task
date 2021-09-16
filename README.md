@@ -8,7 +8,7 @@ Demo available at: <a target="_blank" href="https://articles-grid.netlify.app/">
 <ul>
   <li>Display grid of articles.</li>
   <li>Responsive grid.</li>
-  <li>Show notifications on button click.</li>
+  <li>Show notification on button click.</li>
   <li>Animation on article hover.</li>
   <li>Fade in articles animation.</li>
   <li>Display tooltip on hover over button.</li>
