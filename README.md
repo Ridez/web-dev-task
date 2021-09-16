@@ -10,7 +10,7 @@ Demo available at: <a target="_blank" href="https://articles-grid.netlify.app/">
   <li>Responsive grid.</li>
   <li>Show notification on button click.</li>
   <li>Animation on article hover.</li>
-  <li>Fade in articles animation.</li>
+  <li>Fade in animations.</li>
   <li>Display tooltip on hover over button.</li>
   <li>Check if element is in Viewport using Intersection Observer API.</li>
 </ul>
